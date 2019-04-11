@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>income</title>
+</head>
+<body>
+<h1>대출</h1>
+
+<form action="income" method="post">
+    나이 : <input type="number" name="age"><br>
+        직업 분류 :
+        <select name="workclass">
+            <option value="Private">Private</option>
+            <option value="State-gov">State-gov</option>
+            <option value="Federal-gov">Federal-gov</option>
+            <option value="Local-gov">Local-gov</option>
+            <option value="Self-emp-inc">Self-emp-inc</option>
+            <option value="Self-emp-not-inc">Self-emp-not-inc</option>
+            <option value="Without-pay">Without-pay</option>
+            <option value="Never-worked">Never-worked</option>
+            <option value="?">?</option>
+        </select><br>
+        학력 :
+        <select name="education">
+            <option value="Preschool">Preschool</option>
+            <option value="1st-4th">1st-4th</option>
+            <option value="5th-6th">5th-6th</option>
+            <option value="7th-8th">7th-8th</option>
+            <option value="9th">9th</option>
+            <option value="10th">10th</option>
+            <option value="11th">11th</option>
+            <option value="12th">12th</option>
+            <option value="Bachelors">Bachelors</option>
+            <option value="HS-grad">HS-grad</option>
+            <option value="Some-college">Some-college</option>
+            <option value="Masters">Masters</option>
+            <option value="Assoc-acdm">Assoc-acdm</option>
+            <option value="Assoc-voc">Assoc-voc</option>
+            <option value="Doctorate">Doctorate</option>
+            <option value="Prof-school">Prof-school</option>
+        </select><br>
+        직업 :
+        <select name="occupation">
+            <option value="Adm-clerical">Adm-clerical</option>
+            <option value="Armed-Forces">Armed-Forces</option>
+            <option value="Exec-managerial">Exec-managerial</option>
+            <option value="Farming-fishing">Farming-fishing</option>
+            <option value="Handlers-cleaners">Handlers-cleaners</option>
+            <option value="Machine-op-inspct">Machine-op-inspct</option>
+            <option value="Craft-repair">Craft-repair</option>
+            <option value="Other-service">Other-service</option>
+            <option value="Prof-specialty">Prof-specialty</option>
+            <option value="Protective-serv">Protective-serv</option>
+            <option value="Priv-house-serv">Priv-house-serv</option>
+            <option value="Sales">Sales</option>
+            <option value="Transport-moving">Transport-moving</option>
+            <option value="Tech-support">Tech-support</option>
+            <option value="?">?</option>
+        </select><br>
+        성별 :
+        <select name="sex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+        인종 :
+        <select name="race">
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Asian-Pac-Islander">Asian-Pac-Islander</option>
+            <option value="Amer-Indian-Eskimo">Amer-Indian-Eskimo</option>
+            <option value="Other">Other</option>
+        </select><br>
+        주당 근무 시간 : <input type="number" name="hou"><br>
+        <input type="submit" value="제출">
+    </form>
+    <hr>
+  <hr>
+<div id="result">{{result}}</div>
+</body>
+</html>
